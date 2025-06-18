@@ -19,7 +19,7 @@ while True:
     while True: 
         try:
             op = int(input("Seleccione una opcion (1/4): "))
-            break
+            break        
         except ValueError:
             print("Error de opcion")
         
@@ -62,7 +62,7 @@ while True:
         for codigo in pacientes.keys():
             if pacientes[codigo][0] == nombre: #pacientes[iterador para recorrer la lista][posicion del nombre de la persona a comparar]
                 print(f"Se elimino a {nombre}")
-                del pacientes[codigo]
+                del pacientes[codigo] #Borra del diccionario pacientes que se busca por codigo(iterador para recorrer la lista)
                 print(pacientes)
                 break
             else:
