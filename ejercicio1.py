@@ -60,7 +60,7 @@ while True:
         
         #codigos = pacientes.keys()
         for codigo in pacientes.keys():
-            if pacientes[codigo][0] == nombre: #pacientes[pacientes.keys][0] [0] siendo el nombre de la persona
+            if pacientes[codigo][0] == nombre: #pacientes[iterador para recorrer la lista][posicion del nombre de la persona a comparar]
                 print(f"Se elimino a {nombre}")
                 del pacientes[codigo]
                 print(pacientes)
